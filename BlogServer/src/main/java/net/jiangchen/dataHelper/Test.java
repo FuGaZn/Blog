@@ -1,17 +1,15 @@
 package net.jiangchen.dataHelper;
 
-import net.jiangchen.Model.User;
+import net.jiangchen.Model.UserPO;
 import net.jiangchen.util.ResultMessage;
 
-import javax.xml.crypto.Data;
-
 public class Test {
-    DataHelper<User> userDataHelper = new HibernateHelper<>(User.class);
+    DataHelper<UserPO> userDataHelper = new HibernateHelper<>(UserPO.class);
 
     public static void main(String[] args){
-        User user = new User(0, "jiang-chen",0,"jiaxing_f@163.com","jiang-chen.net");
+        UserPO userPO = new UserPO(0, "jiang-chen",0,"jiaxing_f@163.com","jiang-chen.net");
         Test test = new Test();
-        ResultMessage resultMessage = test.userDataHelper.save(user);
+        ResultMessage resultMessage = test.userDataHelper.save(userPO);
         System.out.println(resultMessage);
     }
 

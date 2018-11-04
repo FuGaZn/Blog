@@ -1,9 +1,9 @@
 package net.jiangchen.dataHelper;
 
 /**
- * Created by thinkpad on 2017/12/4.
+ * Created by jiang-chen on 2017/12/4.
  */
-public class DataHelperFactory {
+public class DataHelperSingleton {
     private static DataHelper dataHelper;
 
     /**

@@ -4,6 +4,8 @@
 
 初步架构
 
+dataHelper: Hibernate对数据库所作的操作
+
 Controller:处理前端http请求
 
 Repository：数据库操作接口
@@ -15,6 +17,8 @@ Model:模板类
 Service：Controller对后端相关操作的调用接口
 
 ServiceImpl
+
+
 
 技术栈：
 

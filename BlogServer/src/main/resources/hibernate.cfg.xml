@@ -6,9 +6,6 @@
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/blog?characterEncoding=UTF-8</property>
-
-
-
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">161250164</property>
         <!-- dialect:方言，封装的底层API，类似于Runtime，将数据库转换为配置中的相应的语言 -->
@@ -22,6 +19,6 @@
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
-        <mapping class="net.jiangchen.Model.User"></mapping>
+        <mapping class="net.jiangchen.Model.UserPO"></mapping>
     </session-factory>
 </hibernate-configuration>

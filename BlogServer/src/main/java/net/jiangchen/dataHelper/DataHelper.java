@@ -1,12 +1,12 @@
 package net.jiangchen.dataHelper;
 
-
 import net.jiangchen.util.ResultMessage;
 
 import java.util.ArrayList;
 
 /**
- * Created by thinkpad on 2017/11/28.
+ * Created by jiang-chen on 2018/11/4
+ * using code from forward project mspss
  */
 public interface DataHelper<T> {
 

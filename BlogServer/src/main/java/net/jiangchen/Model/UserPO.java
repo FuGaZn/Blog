@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity(name = "users")
-public class User implements Serializable{
+public class UserPO implements Serializable{
     private int uid;
 
     private String username;
@@ -15,14 +15,14 @@ public class User implements Serializable{
     private String passwd;
     private String email;
 
-    public User(int id, String username, int permission, String email,String passwd) {
+    public UserPO(int id, String username, int permission, String email, String passwd) {
         this.uid = id;
         this.username = username;
         this.permission = permission;
         this.email = email;
         this.passwd = passwd;
     }
-    public User(){
+    public UserPO(){
 
     }
 
