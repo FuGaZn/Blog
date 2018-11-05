@@ -1,6 +1,6 @@
-package net.jiangchen.dataHelper;
+package net.jiangchen.blog.dataHelper;
 
-import net.jiangchen.util.ResultMessage;
+import net.jiangchen.blog.util.ResultMessage;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -119,11 +119,9 @@ public class HibernateHelper<T> implements DataHelper<T> {
 
     @Override
     public ArrayList<T> fullMatchQuery(String field, Object value) {
-        System.out.println("I arrive");
         try {
             Criteria criteria = SetUpCriteria();
 
-            System.out.println("I arrive");
             criteria.add(Restrictions.eq(field, value));
             ArrayList<T> result = (ArrayList<T>) criteria.list();
             session.close();

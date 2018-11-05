@@ -1,6 +1,6 @@
-package net.jiangchen.dataHelper;
+package net.jiangchen.blog.dataHelper;
 
-import net.jiangchen.util.ResultMessage;
+import net.jiangchen.blog.util.ResultMessage;
 
 import java.util.ArrayList;
 

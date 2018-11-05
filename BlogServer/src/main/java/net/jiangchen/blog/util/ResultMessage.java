@@ -1,4 +1,4 @@
-package net.jiangchen.util;
+package net.jiangchen.blog.util;
 
 import java.io.Serializable;
 

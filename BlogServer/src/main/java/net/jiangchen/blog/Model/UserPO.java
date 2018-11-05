@@ -1,4 +1,4 @@
-package net.jiangchen.Model;
+package net.jiangchen.blog.Model;
 
 import org.hibernate.annotations.GenericGenerator;
 

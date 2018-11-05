@@ -1,4 +1,4 @@
-package net.jiangchen.dataHelper;
+package net.jiangchen.blog.dataHelper;
 
 /**
  * Created by jiang-chen on 2017/12/4.

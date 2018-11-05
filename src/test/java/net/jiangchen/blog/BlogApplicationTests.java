@@ -1,4 +1,4 @@
-package net.jiangchen.blogserver;
+package net.jiangchen.blog;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class BlogserverApplicationTests {
+public class BlogApplicationTests {
 
 	@Test
 	public void contextLoads() {
