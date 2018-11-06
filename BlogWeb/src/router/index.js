@@ -3,9 +3,9 @@ import Router from 'vue-router'
 import LoginPage from '@/pages/LoginPage'
 import MainPage from '@/pages/MainPage'
 import ArticlePage from '@/pages/ArticlePage'
+import BlogShowPage from "@/pages/BlogShowPage"
 
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
@@ -19,10 +19,15 @@ export default new Router({
       component: LoginPage
     },
     {
-      path: '/article/:code',
+      path: '/article/edit',
       name: 'article',
       component:ArticlePage
     },
+    {
+      path: '/blog/:code',
+      name: 'blog-show-page',
+      component:BlogShowPage
+    }
   ],
   proxyTable:{
     '/user/*' : {

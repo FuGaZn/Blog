@@ -1,12 +1,22 @@
 <template>
+  <div>
+    <md-editor></md-editor>
+  </div>
 
 </template>
 
 <script>
-    import Login from "../components/Login";
+  import SideNavBar from "../components/SideNavBar";
+  import BlogShow from "../components/BlogShow";
+  import Bottom from "../components/Bottom";
+  import MdEditor from "../components/MdEditor";
 
-    export default {
-      components: {Login},
+  export default {
+    components: {
+      MdEditor,
+      Bottom,
+      BlogShow,
+      SideNavBar},
       name: "article-page"
     }
 </script>

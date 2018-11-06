@@ -7,6 +7,13 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import Axios from 'axios'
 import VueAxios from 'vue-axios'
+import ShowDown from 'showdown'
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
+Vue.use(mavonEditor)
+//Vue.use(hljs)
+//Vue.use(Marked)
+Vue.use(ShowDown)
 Vue.config.productionTip = false
 Vue.use(VueAxios, Axios)
 Vue.use(ElementUI)
