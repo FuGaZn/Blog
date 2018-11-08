@@ -143,11 +143,12 @@
       uploadimg($e){
         // 第一步.将图片上传到服务器.
         var formdata = new FormData();
+        formdata.append("email",localStorage.getItem("email"));
         for(var _img in this.img_file){
-          formdata.append(_img, this.img_file[_img]);
+          formdata.append("file", this.img_file[_img]);
         }
         axios({
-          url: 'http://localhost:80/blog/img/upload',
+          url: 'http://localhost:80/blog/uploadImg',
           method: 'post',
           data: formdata,
           headers: { 'Content-Type': 'multipart/form-data' },
@@ -160,7 +161,8 @@
           // 第二步.将返回的url替换到文本原位置![...](0) -> ![...](url)
           for (var img in res) {
             // $vm.$img2Url 详情见本页末尾
-            $vm.$img2Url(img[0], img[1]);
+            var path = "http://localhost:80"+img[1]
+            $vm.$img2Url(img[0], path);
           }
         })
       },

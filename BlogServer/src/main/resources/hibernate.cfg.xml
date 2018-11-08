@@ -20,5 +20,6 @@
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
         <mapping class="net.jiangchen.blog.Model.UserPO"></mapping>
+        <mapping class="net.jiangchen.blog.Model.BlogPO"></mapping>
     </session-factory>
 </hibernate-configuration>

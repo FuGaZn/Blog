@@ -9,7 +9,7 @@ public class Test {
 
     public static void main(String[] args){
         BlogService blogService = new BlogServiceImpl();
-        blogService.read("test",1);
+        blogService.read("test","1");
     }
 
 }
